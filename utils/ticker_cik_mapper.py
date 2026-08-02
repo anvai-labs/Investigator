@@ -28,7 +28,7 @@ class TickerCIKMapper:
     """Maps stock tickers to SEC CIK numbers."""
     
     SEC_TICKER_URL = "https://www.sec.gov/include/ticker.txt"
-    DEFAULT_USER_AGENT = "InvestiGator/1.0 (Vijay Singh; singhvjd@gmail.com)"
+    DEFAULT_USER_AGENT = "InvestiGator/1.0 (Vijay Singh; vijay@anvaiops.com)"
     CACHE_DURATION = timedelta(hours=24)
     
     def __init__(self, data_dir: str = "data", config=None):

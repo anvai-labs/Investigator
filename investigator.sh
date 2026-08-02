@@ -198,7 +198,7 @@ update_ticker_mapping() {
     
     local temp_file="${TICKER_CIK_MAP}.tmp"
     local curl_cmd="curl -s -L --retry 3 --retry-delay 2 --max-time 30"
-    local user_agent="InvestiGator/1.0 (Vijay Singh; singhvjd@gmail.com)"
+    local user_agent="InvestiGator/1.0 (Vijay Singh; vijay@anvaiops.com)"
     
     if ${curl_cmd} -H "User-Agent: ${user_agent}" "${SEC_TICKER_URL}" -o "${temp_file}"; then
         # Verify the download
